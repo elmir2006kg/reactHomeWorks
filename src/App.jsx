@@ -32,7 +32,7 @@ function App() {
           {headerBool ? (
             <Header></Header>
           ) : (
-            <Button onClick={() => setheaderBool(!bool)}>click</Button>
+            <Button onClick={() => setheaderBool(!bool)}>Get Users</Button>
           )}
           <NewExpense onNewExpense={getNewExpense} />
           <Expenses array={expenses} delet={deletTheItem} />
