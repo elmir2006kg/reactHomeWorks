@@ -30,7 +30,7 @@ function App() {
       ) : (
         <div className="root-div">
           {headerBool ? (
-            <Header></Header>
+            <Header setheaderBool={() => setheaderBool(!headerBool)}></Header>
           ) : (
             <Button onClick={() => setheaderBool(!bool)}>Get Users</Button>
           )}
